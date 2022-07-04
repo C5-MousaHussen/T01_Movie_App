@@ -1,0 +1,13 @@
+.leftsideNavbar{
+    display: flex;
+    
+}
+
+.imgtopIcone{
+    width: 20px;
+    height: 20px;
+}
+
+#dana{
+    background-color: red;
+}
