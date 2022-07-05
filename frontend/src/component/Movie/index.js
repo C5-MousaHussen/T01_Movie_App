@@ -25,27 +25,28 @@ const Movie = () => {
     getAllMovie();
   }, []);
 
+  console.log(movieId);
   return (
     <div className="contanierMovies">
       <div className="bodyMovie">
         <h1> Popular Movies</h1>
         <div className="items">
-        {movies
-          ? movies.map((element, index) => {
-              //console.log(element.id);
-              return (
-                <div className="pMovie" key={index}>
-                  <a href={element.id}><img 
-                    className="mosa"
-                    src={`http://image.tmdb.org/t/p/w500/${element.poster_path}`}
-                    key={element.id}
-                  /></a>
-                  
-                </div>
-              );
-            })
-          : []}
-          </div>
+          {movies
+            ? movies.map((element, index) => {
+                return (
+                  <div className="pMovie" key={index}>
+                    <a href={`/movie/${element.id}`}>
+                      <img
+                        className="mosa"
+                        src={`http://image.tmdb.org/t/p/w500/${element.poster_path}`}
+                        key={element.id}
+                      />
+                    </a>
+                  </div>
+                );
+              })
+            : []}
+        </div>
       </div>
     </div>
   );

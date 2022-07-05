@@ -4,6 +4,8 @@ import "./style.css";
 import Movie from "../Movie"
 
 const Home = () => {
+
+
   return (
     <div className="container2">
       <div className="imgbackg">

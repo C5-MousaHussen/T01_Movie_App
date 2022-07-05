@@ -1,0 +1,104 @@
+.contanierDisc{
+    height: 100vh;
+}
+
+
+.headerDisc{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    gap: 10px;
+    
+    background-color: rgb(100, 99, 98);
+    color: aliceblue;
+}
+
+.linkwhite{
+    color: white;
+    text-decoration: none;
+    margin-left: 110px;
+}
+
+h3{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 2;
+}
+
+.desc{
+    height: 100%;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title{
+    width: 80%; 
+    height: 60%;
+    border-radius: 20px;
+    background-color: rgb(54, 52, 52);
+   opacity: 0.8;
+    display: flex;
+}
+
+.imgdesc{
+    height: 100%;
+    width: 20%;
+    border-radius: 20px;
+}
+
+.RightSideDesc{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    color: aliceblue;
+    
+}
+
+.voting{
+    display: flex;
+   width: 50%;
+}
+
+
+.col{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.svg{
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+   cursor: pointer;
+}
+
+.svg:hover{
+    color: tomato;
+}
+
+.buttomdow{
+    display: flex;
+    height: 15%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(25, 25, 24);
+}
+
+.asr{
+    display: flex;
+    gap: 10px;
+}
+
+h4{
+    color: aliceblue;
+}
