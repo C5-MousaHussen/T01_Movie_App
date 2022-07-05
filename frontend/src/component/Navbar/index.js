@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 const Navbar = () => {
@@ -6,13 +7,12 @@ const Navbar = () => {
     <div className="container">
       <nav className="navbar navbar-light bg-light justify-content-between">
         <div className="leftsideNavbar">
-           
           <img
-            src="https://previews.123rf.com/images/fokaspokas/fokaspokas1803/fokaspokas180300443/96962933-tv-with-movie-strip-white-icon-with-shadow-on-transparent-background.jpg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSETrLsNTaS_kq--xgmUac74k8xkmtlfCw1Hg&usqp=CAU"
             className="imgtopIcone"
             alt="/"
           />
-          <a className="navbar-brand">Navbar</a>
+          <Link to="/" className="navbar-brand fs-3 par">Hushki Movie</Link>
         </div>
 
         <form className="form-inline">
@@ -22,5 +22,7 @@ const Navbar = () => {
     </div>
   );
 };
+
+
 
 export default Navbar;
