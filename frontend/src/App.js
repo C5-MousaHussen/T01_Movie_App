@@ -13,14 +13,16 @@ import Movie from "./component/Movie";
 import Navbar from "./component/Navbar";
 
 function App() {
-  return <div className="containerMovie">
-    <Navbar/>
-  <Routes>
-    <Route path="/" element={<Home/>}/>
-    <Route path="/favorite" element={<Favorite/>}/>
-    <Route path="/0" element={<Movie/>}/>
-  </Routes>
-  </div>
+  return (
+    <div className="containerMovie">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/favorite" element={<Favorite />} />
+        <Route path="/0" element={<Movie />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
