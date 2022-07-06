@@ -3,9 +3,10 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import "./style.css";
 const Favorite = () => {
-  let store = JSON.parse(localStorage.getItem("Fav"));
+  let store = JSON.parse(localStorage.getItem("Fav")) || [];
 
   const [favorite, setFavorite] = useState([]);
+  
 
   const getFavoriteMovie = () => {
     axios
@@ -27,12 +28,13 @@ store =  store.filter((elem,index)=>{
     return elem != element
   })
   console.log(store);
+  localStorage.setItem("Fav",JSON.stringify(store))
   
 }
 
   useEffect(() => {
     getFavoriteMovie();
-    deleteFav()
+
   }, []);
 console.log(store);
   return (
