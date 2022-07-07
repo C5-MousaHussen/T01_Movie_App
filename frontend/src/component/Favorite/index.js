@@ -54,6 +54,7 @@ console.log(store);
               </a>
               <button onClick={()=>{
                 deleteFav(element)
+                getFavoriteMovie()
               }}>X</button>
             </div>
               

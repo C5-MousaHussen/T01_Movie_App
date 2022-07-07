@@ -14,7 +14,6 @@ import Navbar from "./component/Navbar";
 import Discription from "./component/Description";
 
 function App() {
-
   const { movieid } = useParams();
   return (
     <div className="containerMovie">
@@ -23,7 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/favorite" element={<Favorite />} />
         <Route path="/0" element={<Movie />} />
-        <Route path="/movie/:movieid" element={<Discription/>} />
+        <Route path="/movie/:movieid" element={<Discription />} />
       </Routes>
     </div>
   );
