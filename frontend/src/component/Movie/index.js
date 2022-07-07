@@ -2,11 +2,13 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./style.css";
-//arr1 = [1,2,3]
-//arr2 = [4,5,6,...arr1]
-const Movie = () => {
-  //number of Page
 
+import Searcher from "../Search/index";
+
+const Movie = () => {
+  
+
+  //number of Page
   const [page, setPage] = useState(1);
 
   const [movies, setMovies] = useState([]);
@@ -20,6 +22,7 @@ const Movie = () => {
       )
       .then((result) => {
         setMovies([...movies, ...result.data.results]);
+        console.log(result);
       })
       .catch((err) => {
         throw err;
@@ -53,6 +56,7 @@ const Movie = () => {
             <></>
           )}
         </div>
+
         <div className="footerLoad">
           <button
             onClick={() => {
@@ -60,7 +64,7 @@ const Movie = () => {
             }}
             className="butload"
           >
-            Load More
+            Show More
           </button>
         </div>
       </div>

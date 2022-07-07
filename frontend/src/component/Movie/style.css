@@ -1,11 +1,13 @@
+
 .contanierMovies {
   height: 250vh;
   width: 100%;
   display: flex;
   justify-content: center;
+
 }
 .items {
-  height: 100%;
+  height:auto;
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
@@ -34,13 +36,21 @@
 }
 
 .footerLoad {
+  
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .butload{
+  height: 50px;
+  width: 20%;
     border: 0px;
-    background-color: blue;
+    border-radius: 20px;
+    background-color: rgb(22, 22, 24);
     color: white;
+}
+
+.butload:hover{
+  opacity: 0.7;
 }
