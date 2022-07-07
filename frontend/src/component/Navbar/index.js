@@ -12,11 +12,11 @@ const Navbar = () => {
             className="imgtopIcone"
             alt="/"
           />
-          <Link to="/" className="navbar-brand fs-3 par">Hushki Movie</Link>
+          <Link to="/" className="wehit fs-3 par ">Hushki Movie</Link>
         </div>
 
         <form className="form-inline">
-          <p className="btn btn-outline-success my-2 my-sm-0">Search</p>
+        <Link to="/favorite" className=" fs-3 par ">My Favorite</Link>
         </form>
       </nav>
     </div>
